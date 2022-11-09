@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*
+{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body
+{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+header{
+    position:sticky;
+    top:0;
+}
+nav
+{
+    background-color:#222;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:1.2rem 0;
+    transition:background-color 0.2s ease-in;
+    /* position:fixed;
+    top:0;
+    left:0;
+    right:0; */
+}
+
+nav .brand_name
+{
+    text-align: center;
+}
+nav .brand_name a
+{
+    font-size:1.5rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+nav ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+    /* padding:0 1rem; */
+}
+nav ul li a{
+    text-decoration: none;
+    padding:1rem;
+}
+nav .brand_name a,
+nav .navbar_itmes ul li a
+{
+    color:white;
+    transition: 0.3s linear;
+}
+
+nav .navbar_itmes ul li:first-of-type a{
+    color:#c0392b;
+    font-weight: 600;
+}
+nav .brand_name a:hover,
+nav .brand_name a:active,
+nav .navbar_itmes ul li a:hover,
+nav .navbar_itmes ul li a:active{
+    color:#c0392b !important;
+}
+.background_image
+{
+    width:100vw;
+    height: 100vh;
+    background:linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('pexels-photo-450035.webp');
+    background-size: cover;
+    background-position:bottom 0 right 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    text-align: center;
+}
+.title
+{
+    margin:0;
+    font-size:3rem;
+}
+.description
+{
+    font-size:1.3rem;
+}
+.content_info
+{
+    max-width:1100px;
+    margin: auto;
+    padding:1rem;
+}
+.content p{
+    color:gray;
+    letter-spacing:1px;
+    line-height: 1.7;
+    text-align: left;
+}
+.sticky
+{
+    background-color: white;
+    padding:0.8rem 0;
+    box-shadow:2px 2px 5px  rgba(0,0,0,0.5);
+}
+.sticky .brand_name a,
+.sticky .navbar_itmes ul li a{
+    color:black !important;
+}
+.sticky .navbar_itmes ul li:first-of-type a{
+    color:#c0392b !important;
+}
